@@ -1,9 +1,12 @@
-# Starter for TypeScript + Webpack + SASS + livereload
+# StarterKit for TypeScript with feeatures
 
-## Features
+- webpack
+- sass
+- livereload
+- minify
+- uglify
 
-
-## Quick start
+## Installation
 ```
 git clone https://github.com/tettori/starter-typescript-webpack.git
 cd starter-typescript-webpack
@@ -11,18 +14,25 @@ npm install
 npm start
 ```
 
-And now you can access `http://localhost:8080/` to see the results.
-It also has live-reload feature, so you can see the changing result immediately.
+**Directories**
+`dist` directory is for the compiled `.js` and `.css` files.   
+`src/components` directory is for `.ts` and `.tsx` files.  
+`src/sass` directory is for `.scss` files.
 
-## Directories
-`dist` is for the compiled js and css files. 
-'src/components' is for .ts and .tsx code.
-'sass' is for .scss files.
 
-## Build
-To get compiled code, you can run this command.
+Usage
+After the `npm start` command, access `http://localhost:8080/` to browse.
+By editing `src/components/*.ts or *.tsx` or `src/sass/*.scss`, you can see the updated result automaticaly.
+
+## Deployment
+To get compiled code, run this command.
 ```
 npm run build
 ```
 
-You can also copy and use the dist directory independently to see the result.
+You can also copy and use `dist` directory independently.
+
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
